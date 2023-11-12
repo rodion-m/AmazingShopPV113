@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Compile Remove="AmazingShopPV113.Backend\**" />
+	  <Compile Remove="AmazingShopPV113.HttpApiClient\**" />
+	  <Compile Remove="AmazingShopPV113.Models\**" />
+	  <Content Remove="AmazingShopPV113.Backend\**" />
+	  <Content Remove="AmazingShopPV113.HttpApiClient\**" />
+	  <Content Remove="AmazingShopPV113.Models\**" />
+	  <EmbeddedResource Remove="AmazingShopPV113.Backend\**" />
+	  <EmbeddedResource Remove="AmazingShopPV113.HttpApiClient\**" />
+	  <EmbeddedResource Remove="AmazingShopPV113.Models\**" />
+	  <None Remove="AmazingShopPV113.Backend\**" />
+	  <None Remove="AmazingShopPV113.HttpApiClient\**" />
+	  <None Remove="AmazingShopPV113.Models\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="7.0.13" />
+		<PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="7.0.13" PrivateAssets="all" />
+		<PackageReference Include="MudBlazor" Version="6.11.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\AmazingShopPV113.HttpApiClient\AmazingShopPV113.HttpApiClient.csproj" />
+	</ItemGroup>
+	
+	
+</Project>
